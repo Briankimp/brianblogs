@@ -58,8 +58,8 @@ export default {
           "5": "#f472b6", // Chart color 5 (pink)
         },
         beautiful: {
-          primary:"#00ff99",
-        }
+          primary: "#00ff99",
+        },
       },
     },
   },
