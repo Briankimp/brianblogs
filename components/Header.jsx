@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { Button } from "./ui/button";
 import { FaMoon } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
   return (
     <div>
       <div className="h-16  border-b-2 border-gray-500 py-3 flex items-center justify-between  ">
@@ -30,13 +33,28 @@ const Header = () => {
           </div>
         </form>
         <div className=" text-xl gap-3 mx-2">
-          <Link href="/" className="px-2">
+          <Link
+            href="/"
+            className={`px-2 ${
+              pathname === "/home" ? "text-beautiful-primary" : ""
+            }`}
+          >
             Home
           </Link>
-          <Link href="/" className="px-2">
+          <Link
+            href="/"
+            className={`px-2 ${
+              pathname === "/About" ? "text-beautiful-primary" : ""
+            }`}
+          >
             About
           </Link>
-          <Link href="/" className="px-2">
+          <Link
+            href="/"
+            className={`px-2 ${
+              pathname === "/Project" ? "text-beautiful-primary" : ""
+            }`}
+          >
             Project
           </Link>
         </div>
