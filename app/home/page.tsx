@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Home = () => {
+const Hoome = () => {
   return (
     <div className="flex flex-col items-center justify-center ">
       <h2 className="font-bold text-4xl ">Welcome to My Blog</h2>
@@ -16,4 +16,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hoome;
