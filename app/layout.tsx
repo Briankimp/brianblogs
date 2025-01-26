@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Brian Blog",
   description: "This is a full Stack Application",
 };
-
+ 
 export default function RootLayout({
   children,
 }: Readonly<{
